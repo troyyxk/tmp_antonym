@@ -1,0 +1,11 @@
+[
+  {
+    "backend": "lexical",
+    "baseline_recall@3": 0.611111111111111,
+    "baseline_ccr": 0.6666666666666666,
+    "baseline_latency_ms": 0.06630706290404002,
+    "constraint_recall@3": 0.611111111111111,
+    "constraint_ccr": 1.0,
+    "constraint_latency_ms": 0.5975266297658285
+  }
+]

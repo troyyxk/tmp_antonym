@@ -1,0 +1,4 @@
+backend,query,relevant_doc_ids,baseline_recall@3,baseline_ccr,baseline_latency_ms,baseline_doc_ids,constraint_recall@3,constraint_ccr,constraint_latency_ms,constraint_doc_ids
+lexical,reviews for hotels that are not dirty,hotel-2|hotel-3|hotel-5,0.333333,0.333333,0.075907,hotel-1|hotel-4|hotel-5,0.333333,1.000000,0.857109,hotel-5
+lexical,meal plans that do not include peanuts,meal-2|meal-3,1.000000,0.666667,0.062823,meal-1|meal-3|meal-2,1.000000,1.000000,0.856534,meal-3|meal-2
+lexical,phones under $500,phone-1|phone-4,0.500000,1.000000,0.060191,phone-4,0.500000,1.000000,0.078937,phone-4

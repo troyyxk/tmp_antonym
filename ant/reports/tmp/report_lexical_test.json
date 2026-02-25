@@ -1,0 +1,94 @@
+{
+  "run_name": "lexical_test",
+  "created_at": "2026-02-25T15:39:40",
+  "top_k": 3,
+  "first_stage_k": 20,
+  "backends": [
+    "lexical"
+  ],
+  "config": {
+    "bge_model": "BAAI/bge-small-en-v1.5",
+    "bge_device": null,
+    "openai_model": "text-embedding-3-small",
+    "openai_base_url": "https://api.openai.com/v1"
+  },
+  "summary": [
+    {
+      "backend": "lexical",
+      "baseline_recall@3": 0.611111111111111,
+      "baseline_ccr": 0.6666666666666666,
+      "baseline_latency_ms": 0.06630706290404002,
+      "constraint_recall@3": 0.611111111111111,
+      "constraint_ccr": 1.0,
+      "constraint_latency_ms": 0.5975266297658285
+    }
+  ],
+  "per_query": [
+    {
+      "backend": "lexical",
+      "query": "reviews for hotels that are not dirty",
+      "relevant_doc_ids": [
+        "hotel-2",
+        "hotel-3",
+        "hotel-5"
+      ],
+      "baseline_recall@3": 0.3333333333333333,
+      "baseline_ccr": 0.3333333333333333,
+      "baseline_latency_ms": 0.07590651512145996,
+      "baseline_doc_ids": [
+        "hotel-1",
+        "hotel-4",
+        "hotel-5"
+      ],
+      "constraint_recall@3": 0.3333333333333333,
+      "constraint_ccr": 1.0,
+      "constraint_latency_ms": 0.8571092039346695,
+      "constraint_doc_ids": [
+        "hotel-5"
+      ]
+    },
+    {
+      "backend": "lexical",
+      "query": "meal plans that do not include peanuts",
+      "relevant_doc_ids": [
+        "meal-2",
+        "meal-3"
+      ],
+      "baseline_recall@3": 1.0,
+      "baseline_ccr": 0.6666666666666666,
+      "baseline_latency_ms": 0.06282329559326172,
+      "baseline_doc_ids": [
+        "meal-1",
+        "meal-3",
+        "meal-2"
+      ],
+      "constraint_recall@3": 1.0,
+      "constraint_ccr": 1.0,
+      "constraint_latency_ms": 0.8565336465835571,
+      "constraint_doc_ids": [
+        "meal-3",
+        "meal-2"
+      ]
+    },
+    {
+      "backend": "lexical",
+      "query": "phones under $500",
+      "relevant_doc_ids": [
+        "phone-1",
+        "phone-4"
+      ],
+      "baseline_recall@3": 0.5,
+      "baseline_ccr": 1.0,
+      "baseline_latency_ms": 0.060191377997398376,
+      "baseline_doc_ids": [
+        "phone-4"
+      ],
+      "constraint_recall@3": 0.5,
+      "constraint_ccr": 1.0,
+      "constraint_latency_ms": 0.07893703877925873,
+      "constraint_doc_ids": [
+        "phone-4"
+      ]
+    }
+  ]
+}

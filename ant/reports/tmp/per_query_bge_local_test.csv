@@ -1,0 +1,4 @@
+backend,query,relevant_doc_ids,baseline_recall@3,baseline_ccr,baseline_latency_ms,baseline_doc_ids,constraint_recall@3,constraint_ccr,constraint_latency_ms,constraint_doc_ids
+bge,reviews for hotels that are not dirty,hotel-2|hotel-3|hotel-5,1.000000,1.000000,204.692917,hotel-5|hotel-3|hotel-2,1.000000,1.000000,182.530466,hotel-5|hotel-3|hotel-2
+bge,meal plans that do not include peanuts,meal-2|meal-3,0.500000,0.333333,177.242484,meal-1|meal-3|meal-4,1.000000,1.000000,183.645876,meal-3|meal-2|hotel-5
+bge,phones under $500,phone-1|phone-4,1.000000,0.666667,149.635192,phone-2|phone-1|phone-4,1.000000,1.000000,147.726441,phone-1|phone-4|meal-3

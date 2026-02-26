@@ -1,0 +1,11 @@
+[
+  {
+    "backend": "bge",
+    "baseline_recall@3": 0.8333333333333334,
+    "baseline_ccr": 0.6666666666666666,
+    "baseline_latency_ms": 177.19019763171673,
+    "constraint_recall@3": 1.0,
+    "constraint_ccr": 1.0,
+    "constraint_latency_ms": 171.30092779795328
+  }
+]
